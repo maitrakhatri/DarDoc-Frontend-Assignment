@@ -20,6 +20,7 @@ function FilterBar() {
       </div>
       <div id="search">
         <input type="text" placeholder="Search" />
+        <img src="../../assets/search.png" alt="search" />
       </div>
       <div id="categories">
         <button>Hoolywood</button>
