@@ -47,25 +47,25 @@ function Main() {
       <div id="popular-main">
         <h1>Popular</h1>
         <div className="popular-main gallery">
-          <div className="popular-main-card">
+          <div className="card">
             <img
               src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
               alt="Game of Thrones"
             />
           </div>
-          <div className="popular-main-card">
+          <div className="card">
             <img
               src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
               alt="Game of Thrones"
             />
           </div>
-          <div className="popular-main-card">
+          <div className="card">
             <img
               src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
               alt="Game of Thrones"
             />
           </div>
-          <div className="popular-main-card">
+          <div className="card">
             <img
               src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg"
               alt="Game of Thrones"
@@ -76,25 +76,25 @@ function Main() {
       <div id="category-main">
         <h1>Hollywood</h1>
         <div className="category-main gallery">
-          <div className="category-main-card">
+          <div className="card">
             <img
               src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg"
               alt="Black Adam"
             />
           </div>
-          <div className="category-main-card">
+          <div className="card">
             <img
               src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg"
               alt="Black Adam"
             />
           </div>
-          <div className="category-main-card">
+          <div className="card">
             <img
               src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg"
               alt="Black Adam"
             />
           </div>
-          <div className="category-main-card">
+          <div className="card">
             <img
               src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/3zXceNTtyj5FLjwQXuPvLYK5YYL.jpg"
               alt="Black Adam"

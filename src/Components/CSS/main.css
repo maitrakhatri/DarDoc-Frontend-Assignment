@@ -23,10 +23,16 @@ main {
     display: flex;
 }
 
-.discover-card img, .popular-main-card img, .category-main-card img {
+.discover-card img, .card img, .card img {
     width: 10rem;
     height: 100%;
     border-radius: 1rem;
+    cursor: pointer;
+}
+
+.card:hover {
+    transition: ease-out 0.2s;
+    transform: scale(1.05);
 }
 
 .discover-card .text {

@@ -1,3 +1,5 @@
 export { Sidebar } from "./Sidebar"
 export { Main } from "./Main"
 export { FilterBar } from "./FilterBar"
+export { DiscoverCard } from "./DiscoverCard"
+export { Card } from "./Card"
