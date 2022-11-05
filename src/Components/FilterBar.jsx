@@ -1,6 +1,11 @@
-import "./CSS/filterbar.css"
+import { useData } from "../Context/DataContext";
+import "./CSS/filterbar.css";
 
 function FilterBar() {
+  const { genre, selectedGenre, setSelectedGenre } = useData();
+
+  const changeSelectedGenre = (newGenre) => setSelectedGenre(newGenre)
+
   return (
     <aside id="FilterBar">
       <div id="profile">
@@ -25,13 +30,13 @@ function FilterBar() {
         <img src="../../assets/search.png" alt="search" />
       </div>
       <div id="categories">
-        <button>Hoolywood</button>
-        <button>Disney</button>
-        <button>Pixar</button>
-        <button>Viu</button>
-        <button>Universal Studios</button>
-        <button>Netflix</button>
-        <button>Bollywood</button>
+        {genre.map((item) => (
+          <button onClick={() => changeSelectedGenre(item)}
+            className={item.name === selectedGenre.name ? "selected" : ""}
+          >
+            {item.name}
+          </button>
+        ))}
       </div>
       <div id="popular">
         <h3>Popular TV Shows</h3>
@@ -72,7 +77,7 @@ function FilterBar() {
           <img src="https://i.pravatar.cc/300" alt="Chris Hemsworth" />
           <div className="details">
             <p className="bold">Chris Hemsworth</p>
-            <p className="text-small" >Australian</p>
+            <p className="text-small">Australian</p>
           </div>
           <div className="followers">
             <p>56M</p>

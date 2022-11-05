@@ -56,6 +56,10 @@
     border-radius: .5rem;
 }
 
+#categories button.selected {
+    background-color: #FCA311;
+}
+
 #categories button:hover {
     cursor: pointer;
     background-color: #FCA311;
