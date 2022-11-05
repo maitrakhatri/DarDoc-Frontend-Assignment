@@ -1,16 +1,16 @@
 #FilterBar {
     display: flex;
     flex-direction: column;
-    right: 0;
-    height:fit-content;
-    position: absolute;
-    background-color: #121e37;
+    /* height:fit-content; */
+    /* right: 0; */
+    /* position: absolute; */
+    background-color: #1a2640;
     color: #E5E5E5;
-    width: 13rem;
+    width: 14rem;
     font-size: 1.15rem;
     padding-right: 1rem;
     padding: 2rem; 
-    gap: 1rem;  
+    gap: 1rem;
 }
 
 #search {
@@ -23,7 +23,7 @@
 
 #search img {
     width: 1.5rem;
-    height: 100%;
+    /* height: 100%; */
     cursor: pointer;
 }
 

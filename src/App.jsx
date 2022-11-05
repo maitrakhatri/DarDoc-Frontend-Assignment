@@ -4,8 +4,8 @@ import { Main, Sidebar, FilterBar } from "./Components";
 function App() {
   return (
     <div className="App">
-      <Sidebar/>
-      <Main/>
+      <Sidebar />
+      <Main />
       <FilterBar />
     </div>
   );
