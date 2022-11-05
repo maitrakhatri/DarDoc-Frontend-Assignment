@@ -1,3 +1,5 @@
+import "./CSS/sidebar.css"
+
 function Sidebar() {
   return (
     <aside id="sidebar">

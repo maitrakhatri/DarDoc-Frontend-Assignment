@@ -1,3 +1,5 @@
+import "./CSS/filterbar.css"
+
 function FilterBar() {
   return (
     <aside id="FilterBar">
