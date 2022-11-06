@@ -6,8 +6,6 @@ import { DiscoverCard } from "./DiscoverCard";
 function Main() {
   const { discoverTV, popularMovies, genreMovie, selectedGenre } = useData();
 
-  console.log(selectedGenre);
-
   return (
     <main id="main">
       <div id="category-main">
