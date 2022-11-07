@@ -3,7 +3,7 @@ import "./CSS/sidebar.css"
 function Sidebar() {
   return (
     <aside id="sidebar">
-      <h1 id="title">Gflix</h1>
+      <h1 id="title">gozoFlix</h1>
       <div id="menu">
         <h5>Menu</h5>
         <div className="menu-list">

@@ -47,23 +47,23 @@ const DataProvider = ({ children }) => {
 
     const getDiscovereTV = async () => {
         const fetchedDiscoverTV = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`);
-        setDiscoverTV(fetchedDiscoverTV?.data?.results)
+        setDiscoverTV(fetchedDiscoverTV?.data?.results.splice(0,4))
     }
 
     const getPopularMovies = async () => {
         const fetchedPopularMovies = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`);
-        setPopularMovies(fetchedPopularMovies?.data?.results)
+        setPopularMovies(fetchedPopularMovies?.data?.results.splice(0,8))
     }
 
     const getGenreMovie = async (genreID) => {
-        const fetchedGenreMovie = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${genreID}`)
-        setGenreMovie(fetchedGenreMovie?.data.results)
+        const fetchedGenreMovie = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${genreID ?? 878}`)
+        setGenreMovie(fetchedGenreMovie?.data.results.splice(0,8))
     }
 
     useEffect(() => {
         getDiscovereTV();
         getPopularMovies();
-        getGenreMovie(selectedGenre.id);
+        getGenreMovie();
     }, [])
 
     useEffect(() => {
