@@ -18,10 +18,12 @@ function FilterBar() {
           <img
             className="icon"
             src="https://img.icons8.com/ios/50/FFFFFF/visit.png"
+            alt="location"
           />
           <img
             className="icon"
             src="https://img.icons8.com/material-outlined/50/FFFFFF/appointment-reminders--v1.png"
+            alt="reminder"
           />
         </div>
       </div>
